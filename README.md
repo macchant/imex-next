@@ -6,12 +6,17 @@
 
 **Client-side ensemble pipeline. Deterministic pixel analysis + frontier VLM + zero-shot SigLIP, fused into a strict schema and synthesized for six different image-gen models.**
 
+### [→ Live demo](https://imex-next.vercel.app)
+
+[![Deployed on Vercel](https://img.shields.io/badge/live-imex--next.vercel.app-000?style=for-the-badge&logo=vercel&logoColor=white)](https://imex-next.vercel.app)
 [![License: MIT](https://img.shields.io/badge/license-MIT-22c55e?style=for-the-badge)](LICENSE)
 [![Built with Vite](https://img.shields.io/badge/vite-6-646cff?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev)
 [![TypeScript](https://img.shields.io/badge/TypeScript-strict-3178c6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org)
 [![Tested with Vitest](https://img.shields.io/badge/vitest-tested-fcc72b?style=for-the-badge&logo=vitest&logoColor=white)](https://vitest.dev)
 
 <img src="docs/hero.png" alt="imex pipeline UI showing palette, schema, and synthesized prompts" width="900"/>
+
+> **This is v2** — a Vite + strict TypeScript rewrite of the original [`imex`](https://github.com/macchant/imex) (HTML + vanilla JS, still live). Same pipeline architecture, same schema, fully typed, with vitest coverage on the math-heavy stages.
 
 </div>
 
