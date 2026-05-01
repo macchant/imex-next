@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    color-scheme: dark;
+  }
+  body {
+    background:
+      radial-gradient(at 10% 0%, rgba(34, 197, 94, 0.07), transparent 40%),
+      radial-gradient(at 90% 100%, rgba(56, 189, 248, 0.05), transparent 45%),
+      #08090c;
+    background-attachment: fixed;
+  }
+  ::selection {
+    background: #86efac;
+    color: #08090c;
+  }
+}
+
+@layer components {
+  .panel {
+    @apply rounded-xl border border-ink-600/70 bg-ink-800/60 backdrop-blur-sm;
+  }
+  .panel-header {
+    @apply flex items-center justify-between gap-3 border-b border-ink-600/60 px-5 py-3 text-xs font-mono uppercase tracking-[0.2em] text-ink-200;
+  }
+  .panel-body {
+    @apply p-5;
+  }
+  .field {
+    @apply w-full rounded-md border border-ink-500/60 bg-ink-900/80 px-3 py-2 text-sm text-ink-100 placeholder:text-ink-300 outline-none transition;
+  }
+  .field:focus {
+    @apply border-signal-400 ring-2 ring-signal-400/30;
+  }
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-md px-4 py-2 text-sm font-semibold transition active:scale-[0.98] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-signal-400/50;
+  }
+  .btn-primary {
+    @apply btn bg-signal-500 text-ink-900 hover:bg-signal-400;
+  }
+  .btn-ghost {
+    @apply btn border border-ink-500/60 text-ink-100 hover:bg-ink-700/60;
+  }
+  .label {
+    @apply mb-2 block text-[11px] font-mono uppercase tracking-[0.18em] text-ink-300;
+  }
+  .pill {
+    @apply inline-flex items-center gap-1 rounded-full border border-ink-500/60 bg-ink-700/40 px-2.5 py-1 text-[11px] font-mono text-ink-100;
+  }
+  .pill-strong {
+    @apply pill border-signal-400 bg-signal-500/10 text-signal-400;
+  }
+}

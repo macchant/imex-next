@@ -1,0 +1,25 @@
+{
+  "name": "imex",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Reverse-engineer any image into a model-specific AI prompt. Client-side ensemble pipeline: deterministic pixel analysis + frontier VLM + zero-shot SigLIP, fused into a strict schema and synthesized for Midjourney, Ideogram, Leonardo, Flux, SDXL, and DALL·E 3.",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc -b --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.5",
+    "autoprefixer": "^10.4.20",
+    "happy-dom": "^16.5.3",
+    "postcss": "^8.5.1",
+    "tailwindcss": "^3.4.17",
+    "typescript": "^5.7.3",
+    "vite": "^6.0.7",
+    "vitest": "^2.1.8"
+  }
+}
